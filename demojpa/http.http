@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ### Consultar el producto guardado (reemplaza el ID con el devuelto por el POST)
-GET https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/producto/1007
+GET https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/producto/1003
 
 ### Registrar pedido
 POST https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/pedido/nuevo
