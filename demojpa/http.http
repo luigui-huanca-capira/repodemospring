@@ -1,0 +1,44 @@
+
+
+
+
+
+
+### Registrar producto
+POST https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/producto/marca/1001/nuevo
+Content-Type: application/json
+
+{
+  "nombre": "luigui",
+  "descripcion": "celular ",
+  "precio": 600,
+  "stock": 3
+}
+
+### Consultar el producto guardado (reemplaza el ID con el devuelto por el POST)
+GET https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/producto/1007
+
+### Registrar pedido
+POST https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/pedido/nuevo
+Content-Type: application/json
+
+{
+ "items":[
+   {
+     "idProducto": 1004,
+     "cantidad": 2,
+     "precioUnitario":3000
+   },
+   {
+     "idProducto": 1005,
+     "cantidad": 3,
+     "precioUnitario":50
+   }
+ ]
+}
+
+### Buscar pedidos por ID de producto
+GET https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/pedido/producto/1004
+
+### Buscar pedidos por nombre de producto
+GET https://symmetrical-acorn-q5j665qgwjrfr-8081.app.github.dev/pedido/producto/nombre/prueba
